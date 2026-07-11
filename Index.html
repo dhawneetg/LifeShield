@@ -1,0 +1,286 @@
+<link rel="stylesheet" href="styles.css">
+
+<body>
+<div class="phone">
+  <div class="sb"><span>9:41</span><div class="sb-notch"></div><div class="sb-r"><div class="sig"><span></span><span></span><span></span></div><div class="bat"><div class="bat-f"></div></div></div></div>
+
+  <!-- HOME -->
+  <div class="screen active" id="screen-home">
+    <div class="hdr">
+      <div class="greet">Good Morning 👋</div>
+      <div class="uname">Rahul Sharma</div>
+      <div class="notif-bell"  style="position:absolute;top:14px;right:68px;width:36px;height:36px;background:var(--s2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:17px;cursor:pointer">🔔<div class="nbadge"></div></div>
+      <div class="shield">🛡️</div>
+    </div>
+    <div class="vwrap">
+      <div class="vlbl"><div class="ldot"></div> Live Vitals</div>
+      <div class="vrow">
+        <div class="vb"><div class="ve">❤️</div><div class="vv" id="hr-val">72</div><div class="vu">bpm</div><div class="vn">Heart Rate</div></div>
+        <div class="vb"><div class="ve">🩸</div><div class="vv">98</div><div class="vu">%</div><div class="vn">SpO2</div></div>
+        <div class="vb"><div class="ve">😴</div><div class="vv">6.5</div><div class="vu">hrs</div><div class="vn">Sleep</div></div>
+      </div>
+      <div class="psv"><svg viewBox="0 0 300 34" preserveAspectRatio="none"><path class="pp" d="M0,17 L40,17 L55,17 L65,3 L75,31 L85,3 L95,17 L120,17 L135,3 L145,31 L155,3 L165,17 L200,17 L212,3 L222,31 L232,3 L242,17 L300,17"/></svg></div>
+    </div>
+    <button class="sos" ><div class="sos-ring">🚨</div><div><div class="sos-ttl">EMERGENCY SOS</div><div class="sos-sub">Tap to alert doctor & family instantly</div></div></button>
+    <div class="slbl">Health Tools</div>
+    <div class="fgrid">
+      <div class="fc" data-target="wellness"><div class="fc-ic" style="background:var(--pd)">⚖️</div><div class="fc-nm">BMI Calculator</div><div class="fc-sb">Check weight status</div><div class="fc-ar">›</div></div>
+      <div class="fc" data-target="wellness"><div class="fc-ic" style="background:var(--gd)">🍎</div><div class="fc-nm">Food Scanner</div><div class="fc-sb">Scan & track calories</div><div class="fc-ar">›</div></div>
+      <div class="fc" data-target="wellness"><div class="fc-ic" style="background:var(--rd)">🩸</div><div class="fc-nm">Blood Reports</div><div class="fc-sb">BP, Sugar & more</div><div class="fc-ar">›</div></div>
+      <div class="fc" data-target="modal" data-modal="m-book"><div class="fc-ic" style="background:var(--pkd)">📅</div><div class="fc-nm">Appointments</div><div class="fc-sb">Book & track visits</div><div class="fc-ar">›</div></div>
+    </div>
+    <div class="slbl">Your Doctor</div>
+    <div class="dc" ><div class="dc-av">👨‍⚕️</div><div><div class="dc-nm">Dr. Anil Sharma</div><div class="dc-sp">Cardiologist • 12 yrs exp</div><div class="dc-on"><div class="odot"></div><div class="otxt">Available Now</div></div></div><div class="cpill">📞 Call</div></div>
+    <div class="rstrip" ><div style="font-size:28px">💊</div><div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--amber)">Medicine Reminder</div><div style="font-size:11px;color:var(--t2);margin-top:1px">Aspirin 75mg • Next dose in 40 min</div></div><div style="font-size:12px;font-weight:700;color:var(--amber);background:var(--ad);padding:4px 10px;border-radius:8px">2:00 PM</div></div>
+    <div class="slbl">Guardian Family</div>
+    <div class="fscroll">
+      <div class="fchip"><div class="fav" style="background:rgba(255,100,150,0.12);border-color:rgba(255,100,150,0.3)">👩</div><div class="fnm">Mom</div></div>
+      <div class="fchip"><div class="fav" style="background:rgba(150,100,255,0.12);border-color:rgba(150,100,255,0.3)">👧</div><div class="fnm">Sister</div></div>
+      <div class="fchip"><div class="fav" style="background:rgba(0,180,255,0.1);border-color:rgba(0,180,255,0.25)">👦</div><div class="fnm">Brother</div></div>
+      <div class="fchip"><div class="fav" style="background:var(--s2);border-style:dashed">➕</div><div class="fnm">Add</div></div>
+    </div>
+    <div class="slbl">Wellness Channel</div>
+    <div class="tscroll-wrap"><div class="tscroll">
+      <div class="ti" ><div class="ti-th" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">🧘</div><div class="ti-bd"><div class="ti-ttl">Morning Meditation for Heart</div><div class="ti-dur">5 min • Today</div></div></div>
+      <div class="ti" ><div class="ti-th" style="background:linear-gradient(135deg,#0f2027,#203a43)">🥗</div><div class="ti-bd"><div class="ti-ttl">Best Foods After 50</div><div class="ti-dur">8 min • Yesterday</div></div></div>
+      <div class="ti" ><div class="ti-th" style="background:linear-gradient(135deg,#1a0510,#2d0530)">🚶</div><div class="ti-bd"><div class="ti-ttl">10,000 Steps & Why It Matters</div><div class="ti-dur">6 min • 2 days ago</div></div></div>
+    </div></div>
+  </div>
+
+  <!-- EMERGENCY -->
+  <div class="screen" id="screen-emergency">
+    <div class="em-hdr"><div class="embadge"><div class="emdot"></div> Emergency Active</div></div>
+    <div class="pcard"><span class="pemoji">🫀</span><div class="pnm">Ramesh Sharma</div><div class="pmsg">Cardiac emergency detected!</div>
+      <div class="emvs"><div class="emv"><div class="emv-v">38</div><div class="emv-l">bpm ❤️</div></div><div class="emv"><div class="emv-v">89%</div><div class="emv-l">SpO2 🩸</div></div><div class="emv"><div class="emv-v">3:12am</div><div class="emv-l">Time 🕐</div></div></div>
+    </div>
+    <div class="vcard"><div class="vth"><div class="pring">▶️</div></div><div class="vcap">🎬 Recovery position guide — watch now</div></div>
+    <div class="emacts">
+      <button class="emb r" ><div class="emb-ic">🚑</div><div><div class="emb-ttl">Call Ambulance</div><div class="emb-sb">StanPlus • ETA ~8 mins</div></div></button>
+      <button class="emb b" ><div class="emb-ic">👨‍⚕️</div><div><div class="emb-ttl">Video Call Doctor</div><div class="emb-sb">Dr. Anil Sharma • Online</div></div></button>
+      <button class="emb wa" ><div class="emb-ic">💬</div><div><div class="emb-ttl">WhatsApp Alert Family</div><div class="emb-sb">Send location & emergency msg</div></div></button>
+      <button class="emb gg"><div class="emb-ic">✅</div><div><div class="emb-ttl" style="color:var(--t1)">I'm With Patient</div><div class="emb-sb">Confirm you've reached them</div></div></button>
+    </div>
+  </div>
+
+  <!-- WELLNESS -->
+  <div class="screen" id="screen-wellness">
+    <div class="w-hdr"><div class="w-ttl">Wellness Hub 💪</div><div class="w-sb">Track, scan and stay healthy</div></div>
+    <div class="bmic">
+      <div class="bmic-ttl">⚖️ BMI Calculator</div>
+      <div class="bmic-row"><div class="bmic-h"><label class="ilbl">Height (cm)</label><input class="inp" id="bmi-h" type="number" placeholder="170" oninput="calcBMI()"></div><div class="bmic-h"><label class="ilbl">Weight (kg)</label><input class="inp" id="bmi-w" type="number" placeholder="65" oninput="calcBMI()"></div></div>
+      <div class="bmic-res"><div><div class="bmic-val" id="bmi-result">--</div><div style="font-size:11px;color:var(--t2);margin-top:2px">Your BMI</div></div><div class="bmic-cat" id="bmi-cat" style="background:var(--s2);color:var(--t3)">Enter values</div></div>
+    </div>
+    <div class="foodc">
+      <div class="foodc-ttl">🍎 Food Scanner</div>
+      <div class="scan-box" id="scan-box" ><div style="font-size:28px">📷</div><div style="font-size:12px;color:var(--green);font-weight:600">Tap to scan food barcode</div></div>
+      <div class="food-res" id="food-res">
+        <div class="food-row"><span style="font-size:13px;font-weight:600">🍚 White Rice (1 cup)</span><span style="font-size:12px;color:var(--green);font-weight:700">206 kcal</span></div>
+        <div class="food-row"><span style="font-size:13px;font-weight:600">🥦 Broccoli (100g)</span><span style="font-size:12px;color:var(--green);font-weight:700">34 kcal</span></div>
+        <div class="food-row"><span style="font-size:13px;font-weight:600">🥛 Milk (200ml)</span><span style="font-size:12px;color:var(--green);font-weight:700">122 kcal</span></div>
+        <div style="padding-top:8px;display:flex;justify-content:space-between;align-items:center"><span style="font-size:12px;color:var(--t2)">Today's Total</span><span style="font-size:16px;font-weight:800;color:var(--green);font-family:'Syne',sans-serif">1,240 kcal</span></div>
+      </div>
+    </div>
+    <div class="diet-log">
+      <div class="diet-hdr"><div class="diet-ttl">Daily Diet Log</div><button class="diet-add" >+ Add Meal</button></div>
+      <div id="meal-list">
+        <div class="meal-row"><div class="meal-ic" style="background:var(--ad)">🌅</div><div><div class="meal-nm">Breakfast</div><div class="meal-time">7:30 AM • Oats, Banana, Milk</div></div><div class="meal-cal">340 kcal</div></div>
+        <div class="meal-row"><div class="meal-ic" style="background:var(--bd)">☀️</div><div><div class="meal-nm">Lunch</div><div class="meal-time">1:00 PM • Dal, Rice, Sabzi</div></div><div class="meal-cal">520 kcal</div></div>
+        <div class="meal-row"><div class="meal-ic" style="background:var(--gd)">🌙</div><div><div class="meal-nm">Snack</div><div class="meal-time">4:30 PM • Tea, Biscuits</div></div><div class="meal-cal">180 kcal</div></div>
+      </div>
+      <div class="cal-bar-wrap"><div class="cal-bar-lbl"><span>1,040 / 1,500 kcal</span><span style="color:var(--green)">69%</span></div><div class="cal-bar"><div class="cal-fill" id="cal-fill"></div></div></div>
+    </div>
+    <div class="bloodc">
+      <div class="bloodc-ttl">🩸 Blood Readings</div>
+      <div class="blood-irow"><div class="blood-h"><label class="ilbl">Systolic (mmHg)</label><input class="inp" id="bp-sys" type="number" placeholder="120" oninput="checkBP()"></div><div class="blood-h"><label class="ilbl">Diastolic (mmHg)</label><input class="inp" id="bp-dia" type="number" placeholder="80" oninput="checkBP()"></div></div>
+      <div style="margin-top:8px"><label class="ilbl">Blood Sugar (mg/dL)</label><input class="inp" type="number" placeholder="100 (fasting)"></div>
+      <div class="blood-rs" id="bp-result" style="display:none"><div class="brd"><div class="brd-v" id="bp-val">--/--</div><div class="brd-l">Blood Pressure</div></div><div class="brd"><div class="brd-v" id="bp-status" style="font-size:13px">--</div><div class="brd-l">Status</div></div></div>
+    </div>
+    <div class="sleepc">
+      <div class="sleepc-ttl">😴 Sleep Tracker — This Week</div>
+      <div class="sbars" id="sleep-bars"></div>
+      <div class="sdays"><div class="sday">Mon</div><div class="sday">Tue</div><div class="sday">Wed</div><div class="sday">Thu</div><div class="sday">Fri</div><div class="sday">Sat</div><div class="sday">Sun</div></div>
+    </div>
+    <div class="slbl">Reminders</div>
+    <div class="reml">
+      <div class="remi"><div class="rem-ic">💊</div><div style="flex:1"><div class="rem-nm">Aspirin 75mg</div><div class="rem-time">Daily • 8:00 AM & 2:00 PM</div></div><div class="tog" ><div class="tog-d"></div></div></div>
+      <div class="remi"><div class="rem-ic">💧</div><div style="flex:1"><div class="rem-nm">Drink Water</div><div class="rem-time">Every 2 hours</div></div><div class="tog" ><div class="tog-d"></div></div></div>
+      <div class="remi"><div class="rem-ic">🚶</div><div style="flex:1"><div class="rem-nm">Evening Walk</div><div class="rem-time">Daily • 6:00 PM</div></div><div class="tog off" ><div class="tog-d"></div></div></div>
+      <div class="remi"><div class="rem-ic">🩺</div><div style="flex:1"><div class="rem-nm">BP Check</div><div class="rem-time">Daily • 9:00 AM</div></div><div class="tog" ><div class="tog-d"></div></div></div>
+    </div>
+  </div>
+
+  <!-- RECORDS -->
+  <div class="screen" id="screen-records">
+    <div class="rc-hdr"><div class="rc-ttl">My Records 📋</div><div class="rc-sb">Reports, insurance & hospitals</div></div>
+    <div class="slbl">Nearest Hospitals</div>
+    <div class="hosp-card">
+      <div class="hosp-map"><div class="map-grid"></div><div class="map-pin">🏥</div><div class="map-you">📍 You are here</div></div>
+      <div class="hosp-list">
+        <div class="hi"><div class="hi-ic">🏥</div><div><div class="hi-nm">Apollo Hospital</div><div class="hi-dist">Open 24/7 • Cashless</div></div><div class="hi-pill">1.2 km</div></div>
+        <div class="hi"><div class="hi-ic">🏥</div><div><div class="hi-nm">Fortis Healthcare</div><div class="hi-dist">Open 24/7 • Cashless</div></div><div class="hi-pill">2.8 km</div></div>
+        <div class="hi"><div class="hi-ic">🏥</div><div><div class="hi-nm">AIIMS Emergency</div><div class="hi-dist">Open 24/7 • Govt</div></div><div class="hi-pill">4.1 km</div></div>
+      </div>
+    </div>
+    <div class="slbl">Insurance Details</div>
+    <div class="insc">
+      <div class="insc-hr"><div class="insc-lg">🏦</div><div><div class="insc-nm">Star Health Insurance</div><div class="insc-id">Policy: SHI-2024-887654</div></div></div>
+      <div class="insc-rows">
+        <div class="ir"><span class="ir-k">Cover Amount</span><span class="ir-v">₹5,00,000</span></div>
+        <div class="ir"><span class="ir-k">Valid Till</span><span class="ir-v">March 2026</span></div>
+        <div class="ir"><span class="ir-k">Cashless Network</span><span class="ir-v">4,800+ Hospitals</span></div>
+        <div class="ir"><span class="ir-k">Claim Status</span><span class="ir-v" style="color:var(--green)">Active ✓</span></div>
+      </div>
+    </div>
+    <div class="slbl">Government Health Cards</div>
+    <div class="govtr">
+      <div class="gc r"><div class="gc-bg" style="color:var(--blue)">RAHIS</div><div class="gc-num">RH-2024-7823</div><div class="gc-type">Railway Health Insurance</div></div>
+      <div class="gc g"><div class="gc-bg" style="color:var(--green)">CGHS</div><div class="gc-num">CGH-DL-4421</div><div class="gc-type">Central Govt Health Scheme</div></div>
+    </div>
+    <div class="slbl">Prescriptions & Reports</div>
+    <div class="rxl">
+      <div class="rxi"><div class="rxi-ic">💊</div><div style="flex:1"><div class="rxi-nm">Dr. Sharma — Heart Report</div><div class="rxi-dt">May 12, 2026 • Cardiology</div></div><span style="font-size:16px;color:var(--t3)">⬇️</span></div>
+      <div class="rxi"><div class="rxi-ic">📄</div><div style="flex:1"><div class="rxi-nm">Blood Test Report</div><div class="rxi-dt">April 28, 2026 • Pathology</div></div><span style="font-size:16px;color:var(--t3)">⬇️</span></div>
+      <div class="rxi"><div class="rxi-ic">🩻</div><div style="flex:1"><div class="rxi-nm">ECG Report</div><div class="rxi-dt">April 10, 2026 • Cardiology</div></div><span style="font-size:16px;color:var(--t3)">⬇️</span></div>
+    </div>
+    <div class="slbl">Upload New Report</div>
+    <div class="upload-zone" >
+      <div style="font-size:32px;margin-bottom:8px">📤</div>
+      <div style="font-size:13px;font-weight:700;color:var(--blue)">Tap to Upload Report</div>
+      <div style="font-size:11px;color:var(--t3);margin-top:3px">PDF, JPG, PNG supported</div>
+      <div class="upload-preview" id="upload-preview">
+        <div class="upl-f"><div class="upl-ic">📄</div><div><div style="font-size:13px;font-weight:700">Blood_Report_May2026.pdf</div><div style="font-size:11px;color:var(--t2);margin-top:1px">2.4 MB • Uploaded</div></div><span style="margin-left:auto;color:var(--green);font-size:16px">✓</span></div>
+      </div>
+    </div>
+    <div class="slbl">Appointments</div>
+    <div class="apptc">
+      <div class="apptc-ttl">📅 Upcoming Appointment</div>
+      <div class="appt-next"><div class="appt-db"><div class="appt-day">22</div><div class="appt-mon">May</div></div><div><div style="font-size:13px;font-weight:700">Dr. Anil Sharma</div><div style="font-size:11px;color:var(--t2);margin-top:1px">10:30 AM • Cardiology OPD</div></div></div>
+      <button class="mbtn book-appt-btn" style="background:linear-gradient(135deg,var(--pink),#c0155e);color:white" >📅 Book New Appointment</button>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="screen" id="screen-profile">
+    <div class="pbanner"><div class="pav">👤</div></div>
+    <div class="pinfo"><div class="pnm">Ramesh Sharma</div><div class="pdet">Male • 65 yrs • Blood Group: B+</div><div class="ptags"><span class="ptag b">Hypertension</span><span class="ptag a">Diabetes Type 2</span><span class="ptag r">Heart Patient</span></div></div>
+    <div class="slbl">Setup Checklist</div>
+    <div class="ssteps">
+      <div class="ss done"><div class="ss-ic" style="background:var(--bd)">🏥</div><div style="flex:1"><div class="ss-nm">Health Details</div><div class="ss-desc">Age, conditions, blood group, allergies</div></div><div class="ss-chk y">✓</div></div>
+      <div class="ss done"><div class="ss-ic" style="background:var(--gd)">👨‍👩‍👧</div><div style="flex:1"><div class="ss-nm">Family Members</div><div class="ss-desc">3 guardians added</div></div><div class="ss-chk y">✓</div></div>
+      <div class="ss done"><div class="ss-ic" style="background:var(--ad)">👨‍⚕️</div><div style="flex:1"><div class="ss-nm">Doctor Assigned</div><div class="ss-desc">Dr. Anil Sharma • Cardiologist</div></div><div class="ss-chk y">✓</div></div>
+      <div class="ss done"><div class="ss-ic" style="background:var(--pd)">🏦</div><div style="flex:1"><div class="ss-nm">Insurance Added</div><div class="ss-desc">Star Health • ₹5L cover</div></div><div class="ss-chk y">✓</div></div>
+      <div class="ss"><div class="ss-ic" style="background:var(--rd)">⌚</div><div style="flex:1"><div class="ss-nm">Connect Watch</div><div class="ss-desc">Sync wearable for live vitals</div></div><div class="ss-chk n">›</div></div>
+    </div>
+    <div style="padding:0 16px 14px"><button class="mbtn" style="background:linear-gradient(135deg,var(--red),#c01535);color:white">🚪 Sign Out</button></div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bnav">
+    <div class="ni active" id="nav-home" ><div class="ni-ic">🏠</div><div class="ni-lb">Home</div></div>
+    <div class="ni" id="nav-emergency" ><div class="ni-ic">🚨</div><div class="ni-lb">SOS</div></div>
+    <div class="ni" id="nav-wellness" ><div class="ni-ic">💪</div><div class="ni-lb">Wellness</div></div>
+    <div class="ni" id="nav-records" ><div class="ni-ic">📋</div><div class="ni-lb">Records</div></div>
+    <div class="ni" id="nav-profile" ><div class="ni-ic">👤</div><div class="ni-lb">Profile</div></div>
+  </div>
+
+  <!-- MODAL: NOTIFICATIONS -->
+  <div class="overlay" id="m-notif" >
+    <div class="modal">
+      <div class="m-handle"></div>
+      <div class="m-top"><div class="m-title">Notifications 🔔</div><div class="m-close-btn" data-close="m-notif">✕</div></div>
+      <div class="notif-item"><div class="notif-ic" style="background:var(--rd)">❤️</div><div style="flex:1"><div class="notif-ttl">Heart Rate Alert</div><div class="notif-sb">Ramesh's heart rate dropped to 42 bpm at 3:12 AM. Emergency protocol activated.</div><div class="notif-time">Today, 3:12 AM</div></div><div class="nunread"></div></div>
+      <div class="notif-item"><div class="notif-ic" style="background:var(--ad)">💊</div><div style="flex:1"><div class="notif-ttl">Medicine Reminder</div><div class="notif-sb">Time to take Aspirin 75mg. Don't skip your dose.</div><div class="notif-time">Today, 2:00 PM</div></div><div class="nunread"></div></div>
+      <div class="notif-item"><div class="notif-ic" style="background:var(--bd)">👨‍⚕️</div><div style="flex:1"><div class="notif-ttl">Dr. Sharma Message</div><div class="notif-sb">Your ECG report looks good. Continue current medication. See you on 22nd May.</div><div class="notif-time">Yesterday, 6:30 PM</div></div></div>
+      <div class="notif-item"><div class="notif-ic" style="background:var(--gd)">😴</div><div style="flex:1"><div class="notif-ttl">Sleep Goal Achieved!</div><div class="notif-sb">You slept 8 hours last night. Great job! Your heart health improves with good sleep.</div><div class="notif-time">Yesterday, 7:00 AM</div></div></div>
+      <div class="notif-item"><div class="notif-ic" style="background:var(--pd)">🏥</div><div style="flex:1"><div class="notif-ttl">Appointment Reminder</div><div class="notif-sb">Dr. Anil Sharma appointment on 22nd May at 10:30 AM. Apollo Hospital, OPD Room 4.</div><div class="notif-time">2 days ago</div></div></div>
+    </div>
+  </div>
+
+  <!-- MODAL: CALL -->
+  <div class="overlay" id="m-call" >
+    <div class="modal">
+      <div class="m-handle"></div>
+      <div style="display:flex;justify-content:flex-end;margin-bottom:8px"><div class="m-close-btn" data-close="m-call">✕</div></div>
+      <div class="call-screen">
+        <div class="call-ava">👨‍⚕️</div>
+        <div class="call-name">Dr. Anil Sharma</div>
+        <div class="call-status" id="call-status">Calling...</div>
+        <div class="call-btns">
+          <div class="call-mic" >🎤</div>
+          <div class="call-end" >📵</div>
+          <div class="call-mic">📷</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: WHATSAPP -->
+  <div class="overlay" id="m-wa" >
+    <div class="modal">
+      <div class="m-handle"></div>
+      <div class="m-top"><div class="m-title">WhatsApp Alert 💬</div><div class="m-close-btn" data-close="m-wa">✕</div></div>
+      <div class="wa-preview">
+        <div class="wa-msg">🚨 <strong>EMERGENCY ALERT</strong><br><br>Ramesh Sharma is having a cardiac emergency!<br><br>📍 Location: Sector 15, Rohini, Delhi<br>❤️ Heart Rate: 38 bpm (Critical)<br>🩸 SpO2: 89% (Low)<br><br>Please reach immediately or call 108.<br><br>— Sent via LifeShield App</div>
+        <div class="wa-time">Sending to: Mom, Sister, Brother • Now</div>
+      </div>
+      <button class="mbtn wa-send-btn" style="background:linear-gradient(135deg,#25d366,#128c3e);color:white;margin-bottom:10px" >📤 Send WhatsApp Alert Now</button>
+      <button class="mbtn wa-cancel-btn" style="background:var(--s2);color:var(--t1)" >Cancel</button>
+    </div>
+  </div>
+
+  <!-- MODAL: BOOK APPOINTMENT -->
+  <div class="overlay" id="m-book" >
+    <div class="modal">
+      <div class="m-handle"></div>
+      <div class="m-top"><div class="m-title">Book Appointment 📅</div><div class="m-close-btn" data-close="m-book">✕</div></div>
+      <div class="ilbl" style="margin-bottom:8px">Select Doctor</div>
+      <div class="doc-opts">
+        <div class="doc-opt sel" ><div class="doc-opt-av">👨‍⚕️</div><div><div style="font-size:13px;font-weight:700">Dr. Anil Sharma</div><div style="font-size:11px;color:var(--t2);margin-top:1px">Cardiologist • Available today</div></div></div>
+        <div class="doc-opt" ><div class="doc-opt-av">👩‍⚕️</div><div><div style="font-size:13px;font-weight:700">Dr. Priya Mehta</div><div style="font-size:11px;color:var(--t2);margin-top:1px">General Physician • Available</div></div></div>
+      </div>
+      <div class="ilbl" style="margin-bottom:8px">Select Date</div>
+      <input class="inp" type="date" style="margin-bottom:14px">
+      <div class="ilbl" style="margin-bottom:8px">Available Time Slots</div>
+      <div class="slots">
+        <div class="slot sel" >9:00 AM</div>
+        <div class="slot" >9:30 AM</div>
+        <div class="slot na">10:00 AM</div>
+        <div class="slot" >10:30 AM</div>
+        <div class="slot" >11:00 AM</div>
+        <div class="slot na">11:30 AM</div>
+        <div class="slot" >2:00 PM</div>
+        <div class="slot" >2:30 PM</div>
+        <div class="slot" >3:00 PM</div>
+      </div>
+      <button class="mbtn book-confirm-btn" style="background:linear-gradient(135deg,var(--pink),#c0155e);color:white" >✅ Confirm Appointment</button>
+    </div>
+  </div>
+
+  <!-- MODAL: WELLNESS TIP -->
+  <div class="overlay" id="m-tip" >
+    <div class="modal">
+      <div class="m-handle"></div>
+      <div class="m-top"><div class="m-title">Morning Meditation 🧘</div><div class="m-close-btn" data-close="m-tip">✕</div></div>
+      <div class="tip-player">
+        <div class="tip-video" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="tip-play-btn" id="tip-play" >▶️</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.5)" id="tip-time">0:00 / 5:00</div>
+        </div>
+        <div class="tip-prog"><div class="tip-prog-fill" id="tip-prog"></div></div>
+        <div class="tip-controls">
+          <button class="tip-ctrl">⏮</button>
+          <button class="tip-ctrl" >▶️</button>
+          <button class="tip-ctrl">⏭</button>
+          <span style="font-size:11px;color:var(--t2);margin-left:auto">Morning Meditation for Heart Health</span>
+        </div>
+      </div>
+      <div style="font-size:13px;color:var(--t2);line-height:1.6;margin-bottom:14px">A 5-minute guided meditation to reduce stress, lower blood pressure, and improve heart health. Best done in the morning before breakfast.</div>
+      <div style="display:flex;gap:8px">
+        <button class="mbtn" style="background:var(--bd);color:var(--blue);flex:1">❤️ Save</button>
+        <button class="mbtn" style="background:var(--gd);color:var(--green);flex:1">📤 Share</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
